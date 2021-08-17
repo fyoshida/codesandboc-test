@@ -78,19 +78,76 @@
  */
 
 //  従来
-function funct1(str) {
-  return str;
+// function funct1(str) {
+//   return str;
+// }
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(funct1("func1です"));
+
+// // アロー関数
+// const func2 = (str) => str;
+
+// console.log(func2("func2です"));
+
+// const func3 = (num1, num2) => num1 + num2;
+
+// console.log(func3(10, 20));
+
+// const sayHello = (name = "吉田") => console.log(`${name}さん`);
+// sayHello()
+
+/**
+ * スプレッド構文 ...
+ */
+// 配列の展開
+// const arr1 = [1, 2];
+// console.log(arr1);
+// console.log(...arr1);
+// const sum = (num1, num2) => console.log(num1 + num2);
+// sum(arr1[0], arr1[1]);
+// sum(...arr1);
+
+// // まとめる
+// const arr2 = [1, 2, 3, 4, 5, 6];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(num1);
+// console.log(num2);
+// console.log(arr3);
+
+// // 配列のコピー、結合
+
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+// const arr6 = [...arr4];
+// console.log(arr6);
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7);
+
+// const arr8 = arr4;
+// console.log(arr8);
+// arr8[0] = 100;
+// console.log(arr8);
+// console.log(arr4);
+
+// const arr9 = [...arr4];
+// arr9[0] = 10000;
+// console.log(arr9);
+// console.log(arr4);
+
+/**
+ * map,filter
+ */
+
+const nameArr = ["田中", "佐藤", "吉田"];
+for (let index = 0; index < nameArr.length; index++) {
+  console.log(nameArr[index]);
 }
-const func1 = function (str) {
-  return str;
-};
-console.log(funct1("func1です"));
 
-// アロー関数
-const func2 = (str) => str;
+const nameArr2 = nameArr.map((name) => {
+  return name;
+});
+console.log(nameArr2);
 
-console.log(func2("func2です"));
-
-const func3 = (num1, num2) => num1 + num2;
-
-console.log(func3(10, 20));
+nameArr.map((name) => console.log(name));
