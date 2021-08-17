@@ -1,9 +1,21 @@
-// /**
-//  * const,let 等の変数宣言
-//  */
+// const myProfile = {
+//   name: "吉田",
+//   age: 20
+// =======
+// // /**
+// //  * const,let 等の変数宣言
+// //  */
+// };
 
-// var val1 = "var変数";
-// console.log(val1);
+// const message1 = "名前は${myProfile.name}です。年齢は${myProfile.age}です";
+// console.log(message1);
+// =======
+// // var val1 = "var変数";
+// // console.log(val1);
+
+// const { name, age } = myProfile;
+// const message2 = "名前は${name}です。年齢は${age}です";
+// console.log(message2);
 
 // //  var変数への上書き可能
 // val1 = "var編巣を上書き";
